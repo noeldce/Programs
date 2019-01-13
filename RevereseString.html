@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<h3>
+ Reverse the sentence
+</h3>
+<p id="demo">
+
+</p>
+<script>
+function reverse_str(string) {
+    
+    var str = string.split("");
+    var word =" ";
+    for (var i = 1; i <= str.length; i++) {
+           word += str[str.length-i];
+    }
+    return word;
+}
+
+document.getElementById("demo").innerHTML = reverse_str("Longest word in string using Javascript");
+</script>
+</html>
